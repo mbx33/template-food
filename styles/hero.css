@@ -1,0 +1,28 @@
+.container {
+	height: 100vh;
+	width: 100%;
+	padding: 0 1rem;
+	background-image: url('../public/images/pancakes.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0rem;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+}
+
+.logo {
+	width: 30%;
+	padding: 1.3rem;
+}
+
+.headline {
+	color: var(--main-color);
+}
+
+.headline {
+	font-size: 4rem;
+	font-weight: 300;
+	width: 60%;
+	padding: 2rem;
+}

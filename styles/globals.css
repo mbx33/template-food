@@ -1,26 +1,53 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+/*Create site variable here*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+	--main-color: #fff;
+	--secondary-color: hsl(39, 100%, 50%);
+	--hilight-color: hsl(39, 100%, 50%, 0.7);
+	--color-dark: hsl(0, 0%, 0%);
+
+	--fw-light: 300;
+	--fw-med: 400;
+	--fw-lg: 700;
 }
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Merriweather sans-serif;
+	font-size: 62.5%;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+form {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+.btn {
+	color: var(--main-color);
+	font-size: 1.3rem;
+	font-weight: var(--fw-med);
+	width: 12rem;
+	padding: 1rem 2.2rem;
+	border-radius: 0.5rem;
+	background-color: var(--secondary-color);
+	border: none;
+	cursor: pointer;
+	margin-left: 2rem;
+}
+
+.btn:hover {
+	color: var(--color-dark);
+	background-color: var(--hilight-color);
+	border: 1px solid var(--main-color);
 }
