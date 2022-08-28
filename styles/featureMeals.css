@@ -1,0 +1,25 @@
+.features-section {
+	background-color: var(--color-dark);
+	background-image: url('https://www.transparenttextures.com/patterns/wood.png');
+}
+
+.top-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5rem;
+	font-size: 1.8rem;
+	/* background-color: red; */
+}
+
+.title {
+	font-size: 3.3rem;
+	font-weight: 300;
+}
+
+.sub-title {
+	width: 80%;
+	text-align: center;
+	color: var(--color-accent);
+}

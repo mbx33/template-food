@@ -1,3 +1,45 @@
 .about-container {
-	height: 200vh;
+	display: flex;
+}
+
+.left {
+	width: 50%;
+	background-image: url('../public/images/toast.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.right {
+	width: 50%;
+	background-color: var(--color-dark);
+	background-image: url('https://www.transparenttextures.com/patterns/wood.png');
+	display: flex;
+	flex-direction: column;
+	padding: 0.4rem 2rem 1.5rem;
+}
+
+.about-title {
+	font-style: italic;
+	font-size: 2.1rem;
+	text-align: center;
+}
+
+.about-text {
+	color: var(--color-accent);
+
+	font-size: 1.35rem;
+	line-height: 1.8;
+	width: 74%;
+	margin: 0 auto 1.5rem;
+}
+
+.about-btn {
+	background: none;
+	border: 1px solid var(--secondary-color);
+	transition: 1s;
+	margin: 0 auto;
+}
+
+.about-btn:hover {
+	color: var(--main-color);
 }

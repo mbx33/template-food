@@ -1,0 +1,15 @@
+.testimonial-section {
+	color: var(--color-dark);
+	padding: 3rem;
+}
+
+.card-container {
+}
+
+.quote-name {
+	font-size: var(--fs-reg);
+}
+
+.quote-text {
+	font-size: var(--fs-md);
+}

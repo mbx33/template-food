@@ -7,6 +7,8 @@
 	position: sticky;
 	top: 0;
 	box-shadow: 0 0 1rem hsl(0, 0%, 57%);
+	color: var(--color-dark);
+	margin: 0.3rem 0;
 }
 
 .left-links,
