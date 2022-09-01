@@ -15,18 +15,15 @@
 	padding: 40px;
 	background-color: var(--highlight-color);
 	border-radius: 2rem;
-	/* border: 1px solid red; */
 }
 
 .carousel {
 	cursor: grab;
 	overflow: hidden;
-	/* background-color: pink; */
 }
 
 .inner-carousel {
 	display: flex;
-	/* background-color: lightblue; */
 }
 
 .quote-name {
@@ -35,4 +32,5 @@
 
 .quote-text {
 	font-size: var(--fs-md);
+	text-align: left;
 }

@@ -29,11 +29,9 @@ function Testimonials() {
 	const [width, setWidth] = useState(0);
 	const carousel = useRef();
 
-	1771 / 1270;
-
 	useEffect(() => {
 		console.log(carousel.current.scrollWidth);
-		setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+		setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth + 100);
 	}, []);
 
 	return (

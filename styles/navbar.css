@@ -12,6 +12,13 @@
 	z-index: 100;
 }
 
+.nav-container div a:hover {
+	color: orange;
+	text-decoration: underline;
+	text-underline-offset: 10px;
+	transition: 0.3s;
+}
+
 .left-links,
 .right-links {
 	display: flex;
