@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 export const TestimonialCard = ({ data }) => {
 	return (
@@ -7,10 +8,10 @@ export const TestimonialCard = ({ data }) => {
 				data.map((message) => {
 					const { name, text } = message;
 					return (
-						<>
+						<motion.div key={text} className="testimonial">
 							<h3 className="quote-name">{name}</h3>
 							<blockquote className="quote-text">{text}</blockquote>
-						</>
+						</motion.div>
 					);
 				})}
 		</article>

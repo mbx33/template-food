@@ -1,7 +1,7 @@
 // styles
-import { BsChatLeftQuote } from 'react-icons/bs';
-import { FaQuoteLeft } from 'react-icons/fa';
-import Image from 'next/image';
+
+import { useEffect, useRef, useState } from 'react';
+import { motion } from 'framer-motion';
 
 // components
 import { TestimonialCard } from './TestimonialCard';
@@ -26,9 +26,31 @@ const testimonials = [
 ];
 
 function Testimonials() {
+	const [width, setWidth] = useState(0);
+	const carousel = useRef();
+
+	1771 / 1270;
+
+	useEffect(() => {
+		console.log(carousel.current.scrollWidth);
+		setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+	}, []);
+
 	return (
 		<section className="testimonial-section">
-			<TestimonialCard data={testimonials} />
+			<motion.div
+				ref={carousel}
+				whileTap={{ cursor: 'grabbing' }}
+				className="carousel"
+			>
+				<motion.div
+					drag="x"
+					dragConstraints={{ right: 0, left: -width }}
+					className="inner-carousel"
+				>
+					<TestimonialCard data={testimonials} />
+				</motion.div>
+			</motion.div>
 		</section>
 	);
 }

@@ -1,9 +1,32 @@
 .testimonial-section {
 	color: var(--color-dark);
 	padding: 3rem;
+	margin: 0 5%;
 }
 
 .card-container {
+	display: flex;
+	gap: 2rem;
+}
+
+.testimonial {
+	min-height: 20rem;
+	min-width: 30rem;
+	padding: 40px;
+	background-color: var(--highlight-color);
+	border-radius: 2rem;
+	/* border: 1px solid red; */
+}
+
+.carousel {
+	cursor: grab;
+	overflow: hidden;
+	/* background-color: pink; */
+}
+
+.inner-carousel {
+	display: flex;
+	/* background-color: lightblue; */
 }
 
 .quote-name {
