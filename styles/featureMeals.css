@@ -1,7 +1,7 @@
-.features-section {
+/* .features-section {
 	background-color: var(--color-dark);
 	background-image: url('https://www.transparenttextures.com/patterns/wood.png');
-}
+} */
 
 .top-section {
 	display: flex;
@@ -10,6 +10,8 @@
 	align-items: center;
 	padding: 5rem;
 	font-size: 1.8rem;
+	background-color: var(--color-dark);
+	background-image: url('https://www.transparenttextures.com/patterns/wood.png');
 }
 
 .title {
@@ -25,7 +27,7 @@
 
 .featured-items {
 	width: 90%;
-	margin: 0 auto;
+	margin: 3rem auto;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 2rem;
@@ -36,16 +38,22 @@
 .card {
 	font-size: var(--fs-md);
 	padding: 2rem;
-	color: black;
-	background-color: #fff;
+	background-color: var(--color-dark);
+	background-image: url('https://www.transparenttextures.com/patterns/wood.png');
 	border-radius: 0.5rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	gap: 1rem;
+	gap: 2rem;
 }
 
 .card img {
-	border-radius: 10px;
+	transition: 0.5s ease-in-out;
+}
+
+.card img:hover {
+	transform: scale(1.1);
+	overflow: hidden;
+	transition: 0.5s ease-in;
 }

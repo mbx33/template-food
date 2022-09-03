@@ -25,13 +25,17 @@ const testimonials = [
 	},
 ];
 
+// Testimonials.defaultProps = {
+// 	name: 'Jimmy',
+// 	age: 22,
+// };
+
 function Testimonials() {
 	const [width, setWidth] = useState(0);
 	const carousel = useRef();
 
 	useEffect(() => {
-		console.log(carousel.current.scrollWidth);
-		setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth + 100);
+		setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
 	}, []);
 
 	return (

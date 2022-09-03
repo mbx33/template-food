@@ -1,40 +1,7 @@
 import { IoRestaurantOutline } from 'react-icons/io5';
 import FeaturedItems from './FeaturedItems';
 
-// Menu items
-
-const items = [
-	{
-		id: 1,
-		title: 'Item 1',
-		subtitle:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eius quasi earum magni minima? Optio, id? Culpa, doloremque quae, neque magni eaque maiores laudantium officiis quia ducimus possimus ullam!',
-		src: '/images/plate.jpg',
-	},
-	{
-		id: 2,
-		title: 'Item 2',
-		subtitle:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eius quasi earum magni minima? Optio, id? Culpa, doloremque quae, neque magni eaque maiores laudantium officiis quia ducimus possimus ullam!',
-		src: '/images/plate.jpg',
-	},
-	{
-		id: 3,
-		title: 'Item 3',
-		subtitle:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eius quasi earum magni minima? Optio, id? Culpa, doloremque quae, neque magni eaque maiores laudantium officiis quia ducimus possimus ullam!',
-		src: '/images/plate.jpg',
-	},
-	{
-		id: 4,
-		title: 'Item 4',
-		subtitle:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eius quasi earum magni minima? Optio, id? Culpa, doloremque quae, neque magni eaque maiores laudantium officiis quia ducimus possimus ullam!',
-		src: '/images/plate.jpg',
-	},
-];
-
-function FeatureMeals() {
+function FeatureMeals({ data }) {
 	return (
 		<section className="features-section">
 			<div className="top-section">
@@ -46,7 +13,7 @@ function FeatureMeals() {
 				</p>
 			</div>
 			<div className="featured-items">
-				<FeaturedItems items={items} />
+				<FeaturedItems items={data} />
 			</div>
 		</section>
 	);
